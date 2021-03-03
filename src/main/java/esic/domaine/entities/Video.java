@@ -62,12 +62,10 @@ public class Video extends AbstractEntity implements Serializable{
         this.idVideo = idVideo;
         this.lien = lien;
     }
+      
     
-    
-    
-    public Video(long idVideo, String lien, Cours idCours) {
+    public Video(String lien, Cours idCours) {
 		super();
-		this.idVideo = idVideo;
 		this.lien = lien;
 		this.idCours = idCours;
 	}

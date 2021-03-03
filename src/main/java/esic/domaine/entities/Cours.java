@@ -87,7 +87,12 @@ public class Cours extends AbstractEntity implements Serializable
         this.heureFin = heureFin;
     }
 
-    public long getIdCours() {
+    public Cours(Module idModule) {
+		super();
+		this.idModule = idModule;
+	}
+
+	public long getIdCours() {
         return idCours;
     }
 
