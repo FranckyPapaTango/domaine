@@ -86,7 +86,7 @@ public class Utilisateur extends AbstractEntity implements Serializable{
     @Basic(optional = false)
     @Column(name = "MOT_DE_PASSE")
     private String motDePasse;
-    @OneToMany(mappedBy = "idUtilisateur")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "idUtilisateur")
     private Collection<Cours> coursCollection;
 
     public Utilisateur() {
